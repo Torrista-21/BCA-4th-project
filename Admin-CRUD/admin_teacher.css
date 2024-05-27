@@ -1,0 +1,13 @@
+.division1 h2{
+    float:left;
+}
+.division1 button{
+    float: right;
+}
+
+
+h4{
+    text-transform: capitalize;
+    color:red;
+    margin-left:30%;
+}

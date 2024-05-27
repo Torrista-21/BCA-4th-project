@@ -1,0 +1,152 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+
+}
+body{
+    color: antiquewhite;
+    background-image: url(./images/1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family:  sans-serif;
+
+}
+
+ header h1{
+
+   width: 100%;
+   text-align: center;
+   font-size: 70px;
+   margin-top:5%;
+ }
+
+
+ .date-section{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6%;
+    transform: translatey(50px);
+    border-radius: 30px;
+    box-shadow: 8px 6px 10px white;
+
+ }
+
+ .calender{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    overflow:hidden;
+ }
+
+.left, .right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-size: 30px;
+}
+
+#date {
+    font-size: 45px;
+}
+
+.right{
+    width: 48%; 
+    background-color:rgba(38,61,84,); 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.left{
+    background-color: antiquewhite;
+    opacity: 0.7;
+    width:52%;
+    color:rgba(30,42,52,255) ;
+}
+.admin-dashboard h2 {
+font-size: 90px;
+width: 60%;
+margin-left:40%;
+transform: translateY(-130px);
+text-transform: capitalize;
+
+}
+
+.class-info{
+    transform: translateY(-130px);
+    width: 60%;
+    display: flex;
+    margin-left: 35%;
+}
+.class-info h3{
+    display:flex;
+    margin-left: 100px;
+    font-size: 30px;
+    width: 40%;
+}
+
+#logout{
+    font-size:30px;
+    width:10%;
+    height:40px;
+    margin-left: 85%;
+    transform: translateY(-160px);
+    background-color: rgba(20,43,65,255);
+    border-radius: 10px;
+}
+#logout a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+span{
+    display: flex;
+    justify-content: center;
+   text-align: center ;
+   font-size:100px;
+}
+
+
+
+#subjects{
+    display: flex;
+    width:100%;
+    text-align: center;
+    transform: translateY(-50px);
+    height: 225px;
+    box-sizing: content-box;;
+    cursor: pointer;
+}
+#subjects .subject-5{
+    margin:20px;
+    padding: 8px  auto;
+    width:25%;
+    height: 100%;
+    border-radius: 15%;
+    box-shadow: 6px 6px 8px  white;
+
+}
+#subjects .subject-5 h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 23px;
+    transform: translateY(150px);
+    text-transform: capitalize;
+}
+
+#subjects .subjects-5 i {
+    margin-top: 40px;
+
+}
+
+
