@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['user'])){
+    header("location:login.php");
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -5,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="admin_dashboard.css">
+    <link rel="stylesheet" href="admin_dashboard1.css">
 
     <title>Admin</title>
 </head>
@@ -55,7 +62,7 @@
                         <h3>BCA 4th sem</h3>
                     </div>
                 </div>
-                <a href="login.php"><button id="logout" name="logout" value="logout">
+                <a href="logout.php"><button id="logout" name="logout" value="logout">
                 <i class="fa-solid fa-right-from-bracket" style="font-size: 25px;"></i>
                 </a></button>
 
@@ -65,24 +72,29 @@
             
             <div id="subjects">
                 <div class="subject-5">
-                    <h3>attendance</h3>
-                    <img src="./images/icons8-attendance-50.png" style="height: 90px; margin-top:30px">
+                <a href="admin_show_stdInfo.php" style="color:antiquewhite; text-decoration:none" ><h3>Student Report</h3>
+                    <img src="./images/icons8-attendance-80 (1).png" style="height: 90px; margin-top:30px"></a>
 
                 </div>
                 <div class="subject-5">
-                    <a href="admin_teacher.php" style="color:white; text-decoration:none" target="_blank"><h3>teachers</h3>
-                    <i class="fa-solid fa-person-chalkboard " style="font-size: 90px; margin-top:30px" ></i></a>
+                    <a href="admin_teacher.php" style="color:antiquewhite; text-decoration:none" ><h3>teachers</h3>
+                    <i class="fa-solid fa-chalkboard-user " style="font-size: 90px; margin-top:30px" ></i></a>
                     
                 </div>
 
                 <div class="subject-5">
-                    <h3>students</h3>
-                    <i class="fa-solid fa-users" style="font-size: 90px; margin-top:30px"></i>
+                    <a href="admin_student.php"  style="color:antiquewhite;  text-decoration:none;"><h3>students</h3>
+                    <i class="fa-solid fa-users" style="font-size: 90px; margin-top:30px"></i></a>
                 </div>
 
                 <div class="subject-5">
-                    <h3>classs</h3>
-                    <i class="fa-solid fa-book-open" style="font-size: 90px; margin-top:30px"></i>
+                <a href="admin_subjects.php"  style="color:antiquewhite; text-decoration:none" ><h3>subject</h3>
+                    <i class="fa-solid fa-book-open" style="font-size: 90px; margin-top:30px"></i></a>
+                </div>
+
+                <div class="subject-5">
+                <a href="admin_notification.php"  style="color:antiquewhite; text-decoration:none" ><h3>Notifications</h3>
+                <i class="fa-solid fa-bell" style="font-size: 90px; margin-top:30px"></i></a>
                 </div>
 
 

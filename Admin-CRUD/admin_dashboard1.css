@@ -4,8 +4,8 @@
 
 }
 body{
-    color: antiquewhite;
-    background-image: url(./images/1.jpg);
+    color:antiquewhite;
+    background-image: url(./images/green.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -148,5 +148,3 @@ span{
     margin-top: 40px;
 
 }
-
-
